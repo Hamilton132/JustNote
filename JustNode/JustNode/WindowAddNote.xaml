@@ -1,0 +1,28 @@
+﻿<Window x:Class="JustNode.WindowAddNote"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JustNode"
+        mc:Ignorable="d"
+        Title="WindowAddNote" Height="300" Width="500" WindowStartupLocation="CenterScreen">
+
+    <DockPanel>
+        <TextBox 
+            Name="title"
+            DockPanel.Dock="Top"
+            Margin="5"/>
+        <Button
+            DockPanel.Dock="Bottom"
+            Content="Ок" 
+            Height="30"
+            Width="140"
+            Margin="5"
+            Click="Button_Click"/>
+        <RichTextBox
+            Name ="description"
+            Margin="5"
+            VerticalScrollBarVisibility="Visible">
+        </RichTextBox>
+    </DockPanel>
+</Window>
